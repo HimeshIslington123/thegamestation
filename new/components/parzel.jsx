@@ -83,7 +83,7 @@ const Parzel = () => {
     >
          
       {/* First Row - Scrolls Up */}
-      <motion.div style={{ x: y1 }}   transition={{ type: "tween", ease: "easeOut", duration: 2 }} className="flex gap-4 justify-center">
+      <motion.div style={{ x: y1 }}   transition={{ type: "tween", duration: 7 }} className="flex gap-4 justify-center">
         {row1Images.map((src, i) => (
           <img key={i} src={src} alt={`img-${i}`} className={imageClass} />
         ))}
@@ -91,12 +91,12 @@ const Parzel = () => {
      
 
       {/* 3 Row - Scrolls Down */}
-      <motion.div   transition={{ type: "tween", ease: "easeOut", duration: 2 }} style={{ x: y2 }} className="flex gap-4 justify-center">
+      <motion.div   transition={{ type: "tween", duration: 7}} style={{ x: y2 }} className="flex gap-4 justify-center">
         {row2Images.map((src, i) => (
           <img key={i} src={src} alt={`img-${i + 10}`} className={imageClass} />
         ))}
       </motion.div>
-      <motion.div   transition={{ type: "tween", ease: "easeOut", duration: 2 }} style={{ x: y1 }} className="md:hidden flex gap-4 justify-center">
+      <motion.div   transition={{ type: "tween", duration: 2 }} style={{ x: y1 }} className="md:hidden flex gap-4 justify-center">
         {row3Images.map((src, i) => (
           <img key={i} src={src} alt={`img-${i + 10}`} className={imageClass} />
         ))}

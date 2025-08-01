@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
@@ -35,7 +36,7 @@ const Loyalty = () => {
           transition={{ duration: 0.7, delay: 0.3 }}
           viewport={{once:true}}
           className="w-[300px] md:w-[500px] border-1 md:border-2  border-white overflow-hidden rounded-2xl ">
-            <Image
+            <img
               className="object-contain w-full "
               src="/back.jpeg"
               alt="Back side of loyalty card"
@@ -48,7 +49,7 @@ const Loyalty = () => {
           initial={{ opacity: 0,y:20 }}
           transition={{ duration: 0.7, delay: 0.3 }}
           viewport={{once:true}} className="w-[300px] md:w-[500px] border-1 md:border-2  border-white rounded-2xl overflow-hidden">
-            <Image
+            <img
               className="object-contain w-full h-auto"
               src="/front.jpeg"
               alt="Front side of loyalty card"

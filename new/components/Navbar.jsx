@@ -18,7 +18,7 @@ const Navbar = () => {
           href="/"
           className="text-xl font-bold hover:text-orange-300 transition-colors duration-200"
         >
-         <Image src="/vape1.png" className="w-[60px] md:w-[90px] object-contain" alt="Vape Logo" width={80} height={80} />
+         <img src="/vape1.png" className="w-[60px] md:w-[90px] object-contain" alt="Vape Logo" width={80} height={80} />
 
         </Link>
 
@@ -34,10 +34,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/games"
+              href="/price"
               className="text-white hover:text-orange-300 hover:scale-105 transition-transform duration-200"
             >
-              Prices
+              Price
             </Link>
           </li>
           <li>
@@ -46,6 +46,15 @@ const Navbar = () => {
               className="text-white hover:text-orange-300 hover:rotate-6 transition-transform duration-200"
             >
               About us
+            </Link>
+          </li>
+
+           <li>
+            <Link
+              href="/Contactus"
+              className="text-white hover:text-orange-300 hover:rotate-6 transition-transform duration-200"
+            >
+              Contact us
             </Link>
           </li>
         </ul>
@@ -106,18 +115,24 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/games" className="text-white no-underline">
-                  Games
+                <Link href="/price" className="text-white no-underline">
+                  Price
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-white no-underline">
-                  Price
+                <Link href="/aboutus" className="text-white no-underline">
+                  Aboutus
                 </Link>
               </li>
               <li>
                 <Link href="/Booknow" className="text-white no-underline">
                   Book now
+                </Link>
+              </li>
+
+               <li>
+                <Link href="/Contactus" className="text-white no-underline">
+                  Contact us
                 </Link>
               </li>
             </ul>
